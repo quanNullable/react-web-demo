@@ -1,0 +1,138 @@
+:global {
+  div.graffiti * {
+    box-sizing: border-box;
+    list-style: none;
+    -moz-user-select: none;
+  }
+
+  div.graffiti {
+    position: relative;
+    border: 1px solid black;
+  }
+
+  div.graffiti>div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.graffiti>div>img {
+    height: 100%;
+  }
+	div.graffiti>div>canvas {
+  }
+
+  div.graffiti>div>ul.stroke-colors>li {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 3px;
+  }
+
+  div.graffiti>div>ul {
+    position: absolute;
+    padding: 0;
+  }
+
+  div.graffiti>div>ul.stroke-colors {
+    margin-top: 5px;
+    left: 0;
+    top: 0;
+  }
+
+  div.graffiti>div>ul.stroke-width {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    margin-left: 6px;
+  }
+
+  div.graffiti>div>ul.stroke-width>li {
+    cursor: pointer;
+    background-color: #222;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-top: 7px;
+  }
+
+
+  div.graffiti>div>ul.graffiti-control {
+    margin-top: 0;
+    right: 5px;
+    top: 0;
+  }
+
+  div.graffiti>div>ul.graffiti-control>li {
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0.5;
+    margin: 0 0 0 0px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+  }
+
+  div.graffiti>div>ul.graffiti-control>li:first-child {
+    background-image: url(../../assets/img/icon-back.png);
+    margin-left: 0;
+  }
+
+  div.graffiti>div>ul.graffiti-control>li:nth-child(2) {
+    background-image: url(../../assets/img/icon-next.png);
+  }
+
+  div.graffiti>div>ul.graffiti-control>li:nth-child(3) {
+    background-image: url(../../assets/img/icon-save.png);
+    width: 20px;
+    height: 22px;
+  }
+
+  div.graffiti>div>ul.graffiti-control>li:nth-child(4) {
+    background-image: url(../../assets/img/icon-delete.png);
+    width: 20px;
+    height: 22px;
+  }
+
+  div.graffiti>div>ul.graffiti-control>li:last-child {
+    background-image: url(../../assets/img/icon-clear.png);
+  }
+
+  div.graffiti>div>ul.graffiti-control>li:hover {
+    opacity: 1;
+  }
+
+  div.graffiti>div>ul.stroke-colors>li:hover {
+    box-shadow: 0 0 6px #222;
+  }
+
+  li.color-current {
+    box-shadow: 0 0 6px #222;
+  }
+
+  div.graffiti>div>ul.stroke-width>li:hover {
+    box-shadow: 0 0 6px #222;
+  }
+
+  li.width-current {
+    box-shadow: 0 0 6px #222;
+  }
+
+  button.graffiti-save {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .graffiti button.graffiti-draw {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+}
